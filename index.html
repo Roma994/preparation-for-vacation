@@ -87,7 +87,7 @@
   <main class="main">
     <div class="content">
       <div v-if="loadingList" class="loading">Loading taks...</div>
-      <div v-else-if="recipeFiles.length === 0" class="empty">There are no task in the <code>tasks</code> folder.</div>
+      <div v-else-if="recipeFiles.length === 0" class="empty">There are no task in the <code>To do list</code> folder.</div>
 
       <article v-if="!loadingList && recipeFiles.length" class="markdown-body">
         <div v-if="loadingRecipe" class="loading">Loading recipe <code>{{ selectedName }}</code>…</div>
@@ -101,7 +101,7 @@
         <div class="meta">
           <span class="pill">Repo: <a :href="repoUrl" target="_blank" rel="noopener">{{ owner }}/{{ repo }}</a></span>
           <span class="pill">Branch: {{ branch }}</span>
-          <span class="pill">Folder: recipes/</span>
+          <span class="pill">Folder: To do list/</span>
         </div>
         <div>
           <a :href="issuesUrl" target="_blank" rel="noopener">Create an issue →</a>
